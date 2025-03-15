@@ -219,18 +219,13 @@
         </section>
 
         <!-- Tela Jogar -->
-       <section id="modoJogar" class="hidden">
-    <iframe 
-        allow="clipboard-read; clipboard-write" 
-        frameborder="0" 
-        height="800px" 
-        id="embeddedIframe" 
-        sandbox="allow-scripts allow-same-origin" 
-        src="https://app.feiticeira.vip/pr/PRBJ9rmd" 
-        width="100%"
-        style="max-width: 800px; display: block; margin: 0 auto; border: 1px solid #ccc; border-radius: 10px;">
-    </iframe>
-</section>
+        <section id="modoJogar" class="hidden">
+            <!-- A iframe para carregar o site externo, inicialmente oculta -->
+            <iframe id="jogarIframe" src="" frameborder="0" allow="clipboard-read; clipboard-write" allowfullscreen></iframe>
+
+            <!-- Ícone de fechar -->
+            <div id="fecharIframe" class="close-iframe hidden">&times;</div>
+        </section>
 
         <section id="politicasPrivacidade" class="hidden">
             <h2>Políticas de Privacidade</h2>
