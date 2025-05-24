@@ -58,7 +58,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AcertosClub PROMOTOR</title>
+    <title>Acertos Club</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="MPayment/Styles.css">
      
@@ -460,10 +460,39 @@
 
 
     
-    <!-- Inclusão dos scripts JavaScript -->
-    <script src="https://app1.acertosonline.com/resultados.js"></script>
-    <script src="https://app1.acertosonline.com/palpites.js"></script>
-    <script src="script.js"></script>
-    <script src="mercadopago.js"></script>
-    </body>
+     <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const hostname = location.hostname;
+
+    if (hostname === "trivo.acertosclub.com" || hostname.endsWith(".trivo.acertosclub.com")) {
+      // Limpa todos os cookies do domínio
+      document.cookie.split(";").forEach(cookie => {
+        const eqPos = cookie.indexOf("=");
+        const name = eqPos > -1 ? cookie.substring(0, eqPos).trim() : cookie.trim();
+
+        // Remove cookie com escopos diferentes
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=${hostname}`;
+      });
+
+      // Atualiza com um parâmetro único para forçar atualização do cache
+      const url = new URL(window.location.href);
+      if (!url.searchParams.has("update")) {
+        url.searchParams.set("update", Date.now());
+        window.location.replace(url.toString());
+      }
+    } else {
+      console.warn("Domínio não autorizado para limpeza de cookies:", hostname);
+    }
+  });
+</script>
+    
+    
+  <!-- Inclusão dos scripts JavaScript -->
+  <script src="https://rafaeldantasl.github.io/LotoHack/resultados.js?v=20240524"></script>
+    <script src="https://rafaeldantasl.github.io/LotoHack/palpites.js?v=20240524"></script>
+  
+  <script src="script.js?v=20240524"></script>
+  <script src="mercadopago.js?v=20240524"></script>
+</body>
 </html>
