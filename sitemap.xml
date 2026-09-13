@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://banca.acertosclub.com.br/posts/cotaes-das-loterias-federais--dicas-e-estratgias2025-06-02.html</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://banca.acertosclub.com.br/posts/cadastro-de-apostadores---como-conseguir-mais-prmios2026-09-13.html</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>daily</changefreq>
@@ -5655,6 +5649,12 @@
   <url>
     <loc>https://banca.acertosclub.com.br/posts/apostas-de-sucesso---resultados-ao-vivo2025-06-03.html</loc>
     <lastmod>2025-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://banca.acertosclub.com.br/posts/cotaes-das-loterias-federais--dicas-e-estratgias2025-06-02.html</loc>
+    <lastmod>2025-06-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
